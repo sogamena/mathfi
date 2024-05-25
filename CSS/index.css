@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(60deg, #02367b, #006ca5, #0496c7, #04bade,#55e2e9);
+}
+
+.gauche{
+    width: 80%;
+}
+
+.droite{
+    width: 25%;
+    margin-right: 5%;
+    padding: 0 5%;
+    padding-top: 15%;
+    font-size: 250%;
+}
+.droite .lien{
+    border: 2px solid #f2d9a8;
+    padding: 10px;
+    margin-top: 0%;
+    text-align: center;
+    border-radius: 50px;
+    color: aliceblue;
+}
+
+.bouton .lien{
+    border: 2px solid #f2d9a8;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.lien a{
+    padding: 15px;
+    text-decoration: none;
+}
+
+img{
+    width: 30%;
+    
+}
+.gauche{
+    margin-top: 3%;
+}
+
+.gauche img{
+    margin-top: 15%;
+    margin-left: 36%;
+}
+.gauche h1{
+    text-align: center;
+}
+.droite h1{
+    text-align: center;
+    font-size: larger;
+}
+.lo div{
+    margin-top: 10%;
+    
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,tr, td{
+    border: 2px solid black;
+}

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    text-align: center;
+    background: linear-gradient(60deg, #02367b, #006ca5, #0496c7, #04bade,#55e2e9);
+}
+
+/* Logo */
+
+.logo{
+    margin-top: 45%;
+}
+
+.logo h3{
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav{
+    text-align: left;
+    margin-left: 2.5vw;
+    margin-top: 40px;
+    font-size: 2.5vw;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+
+.en-cours {
+    color: green; /* Couleur pour l'état "En cours" */
+}
+
+.termine {
+    color: red; /* Couleur pour l'état "Terminé" */
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: red;
+}
+img{
+    width: 50%;
+    height: auto;
+}
+.container{
+    display: flex;
+}
+
+.contour{
+    background: linear-gradient(60deg, #02367b, #006ca5, #0496c7, #04bade,#55e2e9);
+    margin: auto;
+    margin-top: 9.3%;
+    width: 50%;
+    height: 63vh;
+    border-radius: 1.5vw;
+}
+
+.contourTab{
+    margin: 0 auto;
+    margin-left: 15%;
+    width: 80%;
+}
+
+.pret h3, .cap h3{
+    font-size: 1.5vw;
+}
+
+.forme{
+    width: 90%;
+    margin: auto;
+    margin-top: 2.8%;
+    height: 52vh;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background: whitesmoke;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+form input{
+    margin-top: 15px;
+    width: 18vw;
+    height: 30px;
+    color: none;
+    padding-left: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #02367b;
+}
+
+.duree{
+    text-align: left;
+    width: 65%;
+}
+
+.cap{
+    text-align: left;
+}
+
+.cap h3, .info h3{
+    text-transform: uppercase;
+}
+
+/* Personalisation sur l'historique */
+#historique{
+    width: 80%;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+select:nth-of-type(1) {
+    border: none;
+    border-bottom: 2px solid #02367b;
+    margin:0;
+    padding: 6px;
+    border-radius: 2px;
+    position: absolute;
+    top: 47.2%;
+    /* top: 40.8%; *//*Pour F11*/
+    width: 6%;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    background: transparent;
+  }
+
+  select:nth-of-type(2) {
+    border: none;
+    border-bottom: 2px solid #02367b;
+    margin:0;
+    padding: 6px;
+    border-radius: 2px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    background: transparent;
+  }
+  
+  select:focus {
+    color: black;
+  }
+
+  /* Bouton */
+
+  button{
+    /* background: linear-gradient(60deg, #02367b40, #006ca540, #0496c740, #04bade40,#55e2e940); */
+    width: 200px;
+    border: none;
+    margin: auto;
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 65px;
+    border-radius: 10px;
+    color: white;
+    /* cursor: pointer; */
+  }
+
+  /* button:hover{
+    background: linear-gradient(30deg, #02367b, #006ca5, #0496c7, #04bade,#55e2e9);
+    color: antiquewhite;
+  } */
+
+
+  /* Style tableau */
+
+  /* styles.css */
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab th, .tab td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tab th {
+    background-color: #7abaf7;
+}
+
+.tab tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.col {
+    width: 50%; /* Chaque colonne occupe 50% de la largeur du tableau */
+}
+
+.disabled-cursor {
+    cursor: zoom-in;
+    background: red;
+}

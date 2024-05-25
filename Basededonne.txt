@@ -1,0 +1,32 @@
+-- Crer une base de données 
+CREATE DATABASE sqdp;
+USE sqdp;
+-- Créer la table preteur
+
+CREATE TABLE preteur (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Nom VARCHAR(50),
+    prenom VARCHAR(50),
+    carte VARCHAR(50)
+);
+
+-- Créer la table Prêt
+CREATE TABLE pret (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    capital DECIMAL(10, 2),
+    taux DECIMAL(5, 2),
+    periode INT,
+    types VARCHAR(50)
+    unite VARCHAR(50)
+);
+
+-- Créer la table Accorde pour la relation entre Prêteur et Prêt
+CREATE TABLE accorde (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    preteur_id INT,
+    pret_id INT,
+    date DATE,
+    etat VARCHAR(50),
+    FOREIGN KEY (preteur_id) REFERENCES preteur(id),
+    FOREIGN KEY (pret_id) REFERENCES pret(id)
+);
